@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang=tr>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KADIOG</title>
+        <link rel="stylesheet" href="socialmedia.css">
+        <link rel=”shortcut icon” href=”titlelogo.ico” />
+        <script src="https://kit.fontawesome.com/40fc616ca0.js" crossorigin="anonymous"></script>
+        <!--Kanka burdaki script benim fontawesome sitesindeki icon adresine bağlı. bazı iconları ordan çektim hiç silme burayı -->
+    </head>
+        <body>
+            <nav>
+                <div class="nav-left">
+                    <img src="sketch1627719718159.png" class="logo">
+                    <ul>
+                        <li><img src="notification.png"></li>
+                        <li><img src="inbox.png"></li>
+                        <li><img src="video.png"></li>
+                    </ul>
+                </div>
+
+
+                <div class="nav-right">
+                    <div class="searchbox">
+                        <img src="search.png">
+                        <input type="text" placeholder="Arama yapın">
+                    </div>
+                    <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                        <img src="profile-pic.png">
+                    </div>
+                </div>
+                <!---------settings-menu-------->
+                <div class="settings-menu">
+
+                    <div id="dark-btn">
+                        <span></span>
+                    </div>
+
+                    <div class="settings-menu-inner">
+                        <div class="user-profile">
+                        <img src="profile-pic.png">
+                            <div>
+                                <p>Akif Kadıoğlu</p>
+                                <a href="#">Profilinizi Görün</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="user-profile">
+                            <img src="feedback.png">
+                            <div>
+                                <p>Geri Bildirim Gönderin</p>
+                                <a href="#">Geliştirmemize yardımcı olun</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="settings-links">
+                            <img src="setting.png" class="settings-icon">
+                            <a href="#">Ayarlar ve Gizlilik <img src="arrow.png" width="10px"></a>
+                        </div>
+                        <div class="settings-links">
+                            <img src="help.png" class="settings-icon">
+                            <a href="#">Yardım ve Destek <img src="arrow.png" width="10px"></a>
+                        </div>
+                        
+                        <div class="settings-links">
+                            <img src="logout.png" class="settings-icon">
+                            <a href="#">Çıkış Yap <img src="arrow.png" width="10px"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </nav>
+
+
+            <div class="container">
+                <!----------------left-sidebar---------->
+                <div class="left-sidebar">
+                <div class="imp-links"></div>
+            
+                <div class="shorcut-links"> </div>
+                <div class="sidebar-title">
+                    <h4>Olaylar</h4>
+                    <a href="#">Hepsini Görün</a>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>30</h3>
+                        <span>Temmuz</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Sosyal medya</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Point Bornova</p>
+                        <a href="#">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-event">
+                        <h3>14</h3>
+                        <span>Ekim</span>
+                    </div>
+                    <div class="right-event">
+                        <h4>Doğum Günü</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Optimum İzmir</p>
+                        <a href="#">Daha Fazla Bilgi</a>
+                    </div>
+                </div>
+            </div>
+
+                <!----------------main-content---------->
+                <div class="main-content">
+
+                    <div class="story-galery">
+                        <div class="story story1">
+                            <img src="upload.png" id="upload">
+                            <p>Hikaye Oluştur</p>
+                        </div>
+                        <div class="story story2">
+                            <p>Ayşe</p>
+                        </div>
+                        <div class="story story3">
+                            <p>Akif</p>
+                        </div>
+                        <div class="story story4">
+                            <p>Cemre</p>
+                        </div>
+                        <div class="story story5">
+                            <p>Ali</p>
+                        </div>
+                        <div class="story story2">
+                            <p>Ayşe</p>
+                        </div>
+                        <div class="story story3">
+                            <p>Akif</p>
+                        </div>
+                        <div class="story story4">
+                            <p>Cemre</p>
+                        </div>
+                        <div class="story story5">
+                            <p>Ali</p>
+                        </div>
+                        
+
+                        
+
+                        
+                        
+                    </div>
+
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>Akif Kadıoğlu</p>
+                                <small>Herkese Açık <i class="fas fa-caret-down"></i></small>
+                            </div>
+                        </div>
+
+                        <div class="post-input-container">
+                            <textarea rows="3" placeholder="Ne düşünüyorsun?"></textarea>
+
+                            <div class="add-post-links">
+                                <a href="#"><img src="live-video.png">Canlı Video</a>
+                                <a href="#"><img src="photo.png">Fotoğraf / Video</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="profile-pic.png">
+                                <div>
+                                    <p>Akif Kadıoğlu</p>
+                                    <span>1 Ağustos 2021, 14:01</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        
+                        <p class="post-text">Yakın zamanlarda <span>Antalya</span>'yı gelip görmek çok güzel bir deneyimdi <a href="#">#Manzara</a> <a href="#">#Gezi</a></p>
+                        <img src="Antalya-Kaleiçi-Liman.jpg" class="post-img">
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="comments.png"><a href="#">18 yorumu görün</a></div>
+                                <div><img src="share.png"></div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="profile-pic.png"><i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="profile-pic.png">
+                                <div>
+                                    <p>Akif Kadıoğlu</p>
+                                    <span>30 Temmuz 2021, 17:35</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        
+                        <p class="post-text"><span>Antalya</span>'yı arkadaşlarımda sahil başında geçirmekten çok memnunum <a href="#">#Sahil</a> <a href="#">#Gezi</a></p>
+                        <img src="feed-image-2.png" class="post-img">
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="comments.png"><a href="#">10 yorumu görün</a></div>
+                                <div><img src="share.png"></div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="profile-pic.png"><i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="profile-pic.png">
+                                <div>
+                                    <p>Akif Kadıoğlu</p>
+                                    <span>4 Ağustos 2021, 18:24</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        
+                        <p class="post-text"><span>Shilden</span> sonra şehri araştırmak için yola çıktık <a href="#">#Arkadaşlar</a> <a href="#">#Gezi</a></p>
+                        <img src="feed-image-3.png" class="post-img">
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="comments.png"><a href="#">20 yorumu görün</a></div>
+                                <div><img src="share.png"></div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="profile-pic.png"><i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="profile-pic.png">
+                                <div>
+                                    <p>Akif Kadıoğlu</p>
+                                    <span>5 Ağustos 2021, 11:13</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        
+                        <p class="post-text"><span>Sevgilimden</span> ders çalırken poz vermresini istedim <a href="#">#MyLove</a> <a href="#">#Sweet</a></p>
+                        <img src="feed-image-4.png" class="post-img">
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="comments.png"><a href="#">20 yorumu görün</a></div>
+                                <div><img src="share.png"></div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="profile-pic.png"><i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="profile-pic.png">
+                                <div>
+                                    <p>Akif Kadıoğlu</p>
+                                    <span>6 Ağustos 2021, 20:58</span>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        
+                        <p class="post-text"><span></span> Tatilden geri dönmeden hemen önce son kez birlikte toplanıp muhabbet ettik<a href="#">#Arkadaşlar</a> <a href="#">#SonGün</a></p>
+                        <img src="feed-image-5.png" class="post-img">
+
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div><img src="comments.png"><a href="#">20 yorumu görün</a></div>
+                                <div><img src="share.png"></div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="profile-pic.png"><i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="load-more-button"> Daha Fazla Yükle</button>
+
+
+                </div>
+                <!----------------right-sidebar---------->
+                <div class="right-sidebar">
+
+                    <div class="sidebar-title">
+                        <h4>Sohbet</h4>
+                        <a href="#">Sohbeti Gizle</a>
+                    </div>
+
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-1.png">
+                        </div>
+                        <p>Ayşe Güler</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-2.png">
+                        </div>
+                        <p>Akif Kadıoğlu</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-3.png">
+                        </div>
+                        <p>Cemre Bakan</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-1.png">
+                        </div>
+                        <p>Ayşe Güler</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-2.png">
+                        </div>
+                        <p>Akif Kadıoğlu</p>
+                    </div>
+                    <div class="online-list">
+                        <div class="online">
+                            <img src="member-3.png">
+                        </div>
+                        <p>Cemre Bakan</p>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Copyright 2021 - Tunahan Hilmi Bağlar, Akif Kadıoğlu</p>
+            </div>
+            <script src="script.js"></script>
+            
+</body>
+</html>

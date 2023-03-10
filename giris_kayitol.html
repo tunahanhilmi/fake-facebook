@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<h2>KADIOG.COM</h2>
+	<link rel="stylesheet" href="giris.css">
+	<link rel="shortcut icon" href="Akif Website/sketch1627719718159.png"/>
+</head>
+<body>
+	
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Hesap Oluştur</h1>
+			<span>Email hesabını kullanarak bir hesap oluştur</span>
+			<input type="text" placeholder="Ad Soyad" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Şifre" />
+			<button>Kayıt Ol</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Giriş Yap</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Şifre" />
+			<a href="#">Şifreni mi Unuttun</a>
+			<button>Giriş Yap</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Tekrar Hoşgeldin!</h1>
+				<p>Hesabını oluşturduktan sonra hemen giriş yapmayı unutma. Senide aramızda göremkten memnuniyet duyarız</p>
+				<button class="ghost" id="signIn">Giriş Yap</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hoşgeldin, Dostum!</h1>
+				<p>Hesabın yok ise hemen alttabi butona tıklayarak kayıt olabilirsin</p>
+				<button class="ghost" id="signUp">Kayıt Ol</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>
+		© Copyright 2021 - Tunahan Hilmi Bağlar
+	</p>
+</footer>
+<script> signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</body>
+</html>
